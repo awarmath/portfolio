@@ -56,6 +56,24 @@ header nav ul li a:hover {
     border-radius: 15px;
     text-shadow: none;
 }
+.contact {
+    background: var(--secondary-color);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 25px 25px 25px;
+}
+.contact h2 {
+    color: var(--primary-color);
+    font-size: 48px;
+    margin: 0;
+}
+.contact div {
+    font-size: 36px;
+    color: var(--tertiary-color) ;
+    text-align: center;
+}
 section {
     padding: 60px;
     background: var(--secondary-color);
@@ -80,16 +98,15 @@ section {
     margin: 0 auto 35px auto;
     width: 50%;
 }
-.section h3 {
+.contact-info h3{
     font-size: 36px;
     color: var(--tertiary-color);
-    display: inline-block;
-    padding-bottom: 20px;
-    text-align: center;
-    flex-wrap: wrap;
-    margin: 0 auto 35px auto;
-    width: 100%;
     border-bottom: 5px solid var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 .hero {
     height: 750px;
