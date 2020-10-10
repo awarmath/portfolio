@@ -58,10 +58,11 @@ header nav ul li a:hover {
 }
 section {
     padding: 60px;
+    background: var(--secondary-color);
 }
 .section-title {
     font-size: 48px;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     border-bottom: 3px solid;
     padding-bottom: 20px;
     text-align: center;
@@ -82,10 +83,13 @@ section {
 .section h3 {
     font-size: 36px;
     color: var(--tertiary-color);
+    display: inline-block;
     padding-bottom: 20px;
     text-align: center;
+    flex-wrap: wrap;
     margin: 0 auto 35px auto;
-    width: 50%;
+    width: 100%;
+    border-bottom: 5px solid var(--primary-color);
 }
 .hero {
     height: 750px;
@@ -126,6 +130,7 @@ section {
     flex: 1;
 }
 .projects {
+    background: var(--primary-color);
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -143,7 +148,7 @@ section {
     overflow: hidden;
 }
 .box-3 {
-    background-image: url("../images/Example.png");
+    background-image: url("../images/Example1.png");
     background-size: cover;
     overflow: hidden;
 }
@@ -174,19 +179,20 @@ section {
     top: 0;
     left: 0;
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 .project-img h3 {
     position: relative;
     z-index: 0002;
     top: 200px;
-    transition: 0.6s;
+    transition: 0.2s;
 }
 .project-img h4 {
     position: relative;
     z-index: 0001;
     top: 200px;
-    transition: 1s;
+    transition: 0.3s;
+  
 }
 .project:hover .project-img::after{
     opacity: 1;
