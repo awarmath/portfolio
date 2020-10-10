@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #a8aaa8;
+    --secondary-color: #383c3d;
+    --tertiary-color: #0f8031;
+}
+body {
+    color: var(--tertiary-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+header {
+    padding: 20px 35px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color:  var(--primary-color);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+header a {
+    text-decoration: none;
+    color:  var(--primary-color);
+}
+header nav {
+    margin: 7px 0;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+footer {
+    background:  var(--secondary-color);
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer h2 {
+    color: var(--primary-color);
+    font-size: 30px;
+}
+footer div {
+    line-height: 1.5;
+    text-align: right;
+}
+footer a {
+    color: var(--primary-color);
+}
+section {
+    padding: 60px;
+}
+.hero {
+    height: 750px;
+    width: 100%;
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+.hero h2 {
+    position: relative;
+    bottom: -500px;
+    left: 300px;
+    color: #fff;
+    font-size: 48px;
+}
+.float-left {
+    float: left;
+    top: 100px;
+}
+.intro {
+    background: var(--primary-color)
+}
+.intro h2 {
+color: var(--secondary-color);
+font-size: 30px;
+}
+.intro p {
+    color: var(--tertiary-color);
+    font-size:  24px;
+    text-align: center;
+}
+.projects h2 {
+    color: var(--secondary-color);
+    font-size: 30px;
+}
+.project-grid-container {
+    max-width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 10px;
+}
+.project-grid-item {
+    background-image: url("../images/Example.png");
+    background-size: 100%;
+    border: solid;
+    color: var(--tertiary-color);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+  }
+  .box1 {
+    grid-column-start: 1; 
+    grid-column-end: 3; 
+    grid-row-start: 1; 
+    grid-row-end: 3; 
+  }
+  .box3 {
+    grid-column-start: 3; 
+    grid-column-end: 4; 
+    grid-row-start: 2; 
+    grid-row-end: 3; 
+  }
+  .box4 {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 3; 
+    grid-row-end: 4; 
+  }
+  .box5 {
+    background-image: url("..images/run-buddy.png");
+    grid-column-start: 2; 
+    grid-column-end: 3; 
+    grid-row-start: 3; 
+    grid-row-end: 4; 
+  }
+  .contact h2 {
+    color: var(--secondary-color);
+    font-size: 30px;
+  }
