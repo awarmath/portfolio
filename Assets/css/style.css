@@ -112,7 +112,7 @@ section {
 .hero {
     height: 750px;
     width: 100%;
-    background-image: url("../images/hero.jpg");
+    background-image: url("../images/Hero.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -123,7 +123,7 @@ section {
     color: #fff;
     font-size: 48px;
     padding-bottom: 20px;
-    text-align: right;
+    text-align: left;
     margin: 500px 0 0 0;
 
 }
@@ -159,7 +159,7 @@ section {
     background-image: url("../images/Example.png") ;
     background-size: cover;
     overflow: hidden;
-  }
+}
 .box-2 {
     background-image: url("../images/Example.png");
     background-size: cover;
